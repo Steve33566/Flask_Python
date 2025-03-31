@@ -11,21 +11,13 @@ def exercice(valeur):
         etoiles += '*'
     return etoiles #comm
     <br>
-     for i in range(valeur):
-        etoiles += '*'
-    return etoiles #comm
-<br>
- for i in range(valeur):
-        etoiles += '*'
-    return etoiles #comm
-<br>
- for i in range(valeur):
-        etoiles += '*'
-    return etoiles #comm
-<br>
- for i in range(valeur):
-        etoiles += '*'
-    return etoiles #comm
+    etoiles += '*'
+      <br>
+    etoiles += '*'
+  <br>
+    etoiles += '*'
+  <br>
+    etoiles += '*'
 
 
 
