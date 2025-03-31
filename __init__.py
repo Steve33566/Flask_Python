@@ -10,9 +10,8 @@ def exercice(valeur):
     for i in range(valeur):
         etoiles += '*'
     return etoiles #comm
-     for a in range(i):
-        etoiles += '*'
-    return etoiles #comm
+    if __i__< "__6:
+    return <br> etoiles += '*'
 
 
 
