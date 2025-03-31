@@ -10,7 +10,7 @@ def exercice(valeur):
     for i in range(valeur):
         etoiles += '*'
     return etoiles #comm
-     for a in range(5):
+     for a in range(i):
         etoiles += '*'
     return etoiles #comm
 
