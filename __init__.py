@@ -9,7 +9,7 @@ def exercice(valeur):
     etoiles = ''
     for i in range(valeur):
         etoiles += '*' *valeur + '\n'
-    return etoiles #comm
+    return etoiles 
 
 
 
