@@ -9,8 +9,24 @@ def exercice(valeur):
     etoiles = ''
     for i in range(valeur):
         etoiles += '*'
-        if_etoiles += <'*****';
     return etoiles #comm
+    <br>
+     for i in range(valeur):
+        etoiles += '*'
+    return etoiles #comm
+<br>
+ for i in range(valeur):
+        etoiles += '*'
+    return etoiles #comm
+<br>
+ for i in range(valeur):
+        etoiles += '*'
+    return etoiles #comm
+<br>
+ for i in range(valeur):
+        etoiles += '*'
+    return etoiles #comm
+
 
 
 if __name__ == "__main__":
