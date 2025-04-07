@@ -11,8 +11,6 @@ def formulaire():
         Entrez un nombre : <input type="number" name="valeur" min="2" required>
         <input type="submit" value="Générer">
     </form>
-    '''
-
-
+    
 if __name__ == "__main__":
   app.run(debug=True)
