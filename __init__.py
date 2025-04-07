@@ -4,7 +4,7 @@ from flask import json
 
 
 
-app = Flask(_name_)
+app = Flask(__name__)
 
 @app.route('/<path:valeurs>')
 def exercice(valeurs):
