@@ -3,20 +3,16 @@ from flask import render_template
 from flask import json                                                                                                                                     
 app = Flask(__name__)
 
-@app.route('/<int:valeur>')
-def exercice(valeur):
+@app.route('/<int:n>')
+def fibo(n):
     a, b = 0, 1
-    count = [str(0)] 
+    res = str(a)  # Initialisation avec le premier terme
+    
+    for _ in range(1, min(n, 50)):  # Limité à 50 termes pour la sécurité
+        res += f", {b}"
+        a, b = b, a + b
+    
+    return res
 
-    if valeur > 1:
-        count.append(str(b))
-
-    for _ in range(2, valeur):
-        c = a + b
-        count.append(str(c))
-        a, b = b, c
-
-    return ', '.join(count)  
-
-if __name__ == "__main__":
-    app.run(debug=True)
+if __name__ == '__main__':
+    app.run(host='0.0.0.0')
