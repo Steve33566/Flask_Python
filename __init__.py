@@ -1,18 +1,22 @@
 from flask import Flask
 from flask import render_template
-from flask import json                                                                                                                                     
+from flask import json
+
+
 app = Flask(__name__)
 
-@app.route('/<int:n>')
-def fibo(n):
-    a, b = 0, 1
-    res = str(a)  # Initialisation avec le premier terme
+@app.route('/<int:valeur>')
+def exercice(valeur):
+    somme = 0
+    for i in range(1, valeur + 1):
+        if i % 11 == 0:
+            continue
+        if i % 5 == 0 or i % 7 == 0:
+            if somme + i > 5000:
+                break
+            somme += i
     
-    for _ in range(1, min(n, 50)):  # Limité à 50 termes pour la sécurité
-        res += f", {b}"
-        a, b = b, a + b
-    
-    return res
+    return f'<pre>Somme finale: {somme}</pre>'
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0')
+if __name__ == "__main__":
+    app.run(debug=True)
