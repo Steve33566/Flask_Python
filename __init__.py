@@ -10,7 +10,7 @@ def exercice(valeur):
     for j in range(valeur):
         for i in range(valeur+j):
             etoiles += '1'   
-        for k in range(j+1):
+        for k in range(j-1):
             etoiles += '1'
         etoiles += '<br>'
     return etoiles
