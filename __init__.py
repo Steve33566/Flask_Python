@@ -9,8 +9,9 @@ def exercice(valeur):
     etoiles = ''
     for j in range(valeur):
         for i in range(valeur+j):
-            etoiles += '+'   
+            etoiles += '1'   
         for k in range(j+1):
+             for i in range(valeur-j):
             etoiles += '1'
         etoiles += '<br>'
     return etoiles
